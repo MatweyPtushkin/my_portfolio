@@ -1,0 +1,574 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* ---------Sidebar--------- */
+.sidebar {
+  width: 375px;
+  background-color: #d0d1d3;
+  font-size: 16px;
+}
+
+.sidebar__container {
+  margin: 0 25px;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 50px 25px 0 25px;
+  overflow: hidden;
+}
+
+.avatar__img {
+  margin: auto;
+  width: 100%;
+}
+
+/* ----------CONTACTS--------------- */
+
+.contacts {
+  margin-top: 75px;
+  font-weight: bold;
+}
+
+.contacts__header,
+.personal__header,
+.interests__header,
+.connect__header {
+  width: 100%;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contacts__header::after,
+.personal__header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.contacts__phone,
+.contacts__mail,
+.contacts__portfolio,
+.contacts__place {
+  display: flex;
+  margin-top: 40px;
+}
+
+.contacts__phone__image,
+.contacts__mail__image,
+.contacts__portfolio__image,
+.contacts__place__image {
+  width: 40px;
+  margin-left: 15px;
+}
+
+.contacts__phone__image img,
+.contacts__mail__image img,
+.contacts__portfolio__image img,
+.contacts__place__image img {
+  width: 40px;
+}
+
+.contacts__phone__info,
+.contacts__mail__info,
+.contacts__portfolio__info,
+.contacts__place__info {
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+.contacts__phone__info p,
+.contacts__mail__info p,
+.contacts__portfolio__info p {
+  line-height: 40px;
+}
+
+.contacts__portfolio__info a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------PERSONAL--------------- */
+
+.personal {
+  margin-top: 100px;
+}
+
+.personal__birthday {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.personal__relationship,
+.personal__nationality,
+.personal__languages {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.personal__birthday::after,
+.personal__relationship::after,
+.personal__nationality::after,
+.personal__languages::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  margin-top: 15px;
+}
+
+.personal__birthday span,
+.personal__relationship span,
+.personal__nationality span,
+.personal__languages span {
+  font-weight: bold;
+}
+
+/* ----------INTERESTS------------ */
+
+.interests {
+  margin-top: 90px;
+}
+
+.interests__content ul {
+  margin-top: 45px;
+  list-style-image: url(images/triangle-right.png);
+}
+
+.interests__content li {
+  margin: 25px 0 0 30px;
+  text-align: center;
+}
+
+/* --------------CONNECT------------ */
+
+.connect {
+  margin-top: 90px;
+  font-size: 16px;
+}
+
+.connect__social {
+  margin-top: 40px;
+}
+
+.connect__social__vk,
+.connect__social__instagram,
+.connect__social__github,
+.connect__social__codepen {
+  display: flex;
+  margin-top: 15px;
+}
+
+.connect__social__vk-img img,
+.connect__social__instagram-img img,
+.connect__social__github-img img,
+.connect__social__codepen-img img {
+  width: 45px;
+}
+
+.connect__social__vk-info p,
+.connect__social__instagram-info p,
+.connect__social__github-info p,
+.connect__social__codepen-info p {
+  margin-left: 20px;
+  margin-top: 11px;
+}
+
+.connect__social__codepen-info {
+  margin-bottom: 125px;
+}
+
+.connect__social__vk-info p:hover,
+.connect__social__instagram-info p:hover,
+.connect__social__github-info p:hover,
+.connect__social__codepen-info p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+/* ------------Main------------- */
+.main {
+  width: 825px;
+  border: 1px solid black;
+}
+
+.main__container {
+  margin: 0 25px;
+}
+
+.header__title {
+  margin: 75px 0 0 75px;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  margin-left: 75px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.header__subtitle p::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 2px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+/* -------------ABOUT MY---------- */
+
+.about_my__header,
+.skills__header,
+.my_works__header,
+.free_time__header,
+.footer {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.about_my__info,
+.skills__info,
+.my_works__info,
+.free_time__info {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+/* ----------------------SLIDER-------------------- */
+
+.about_my__courses__certificate {
+  position: relative;
+}
+
+.my_slider.slick-slider {
+  width: 700px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slider-item img {
+  width: 700px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-arrow:focus {
+  outline: none;
+}
+
+.slick-arrow.slick-prev {
+  position: absolute;
+  left: 3%;
+  background-image: url("images/back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-arrow.slick-next {
+  position: absolute;
+  right: 3%;
+  background-image: url("images/next.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots button {
+  border-radius: 50%;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #d0d1d3;
+  margin: 0 3px;
+}
+
+.slick-dots button:focus {
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 2px solid #d0d1d3;
+}
+
+.about_my__courses__site {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.about_my__courses__site a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about_my__courses__site a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* ----------------SKILS--------------- */
+
+.skills__info {
+  text-align: center;
+  display: flex;
+}
+
+.skills__info__name {
+  width: 20%;
+}
+
+.skills__info__name p {
+  height: 30px;
+}
+
+.skills__info__level {
+  width: 80%;
+}
+
+.skills__info__html {
+  display: flex;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.skill-level {
+  height: 30px;
+  background-color: #d0d1d3;
+  margin-left: 3%;
+  width: 90%;
+  display: flex;
+  border: 2px solid #d0d1d3;
+}
+
+.skill-level__percent-html {
+  width: 80%;
+  height: 100%;
+  background-color: black;
+}
+
+.skill-level__percent-css {
+  width: 75%;
+  height: 100%;
+  background-color: black;
+}
+
+.skill-level__percent-js {
+  width: 70%;
+  height: 100%;
+  background-color: black;
+}
+
+.skill-level__percent-react {
+  width: 35%;
+  height: 100%;
+  background-color: black;
+}
+
+.skills__info__optionally {
+  margin-top: 40px;
+  font-size: 22px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.skills__info__optionally span {
+  font-weight: bold;
+}
+
+.my_works__info {
+  text-align: center;
+}
+.my_works__info p {
+  margin: 5px 0;
+}
+
+.my_works__info a {
+  text-decoration: none;
+  color: black;
+}
+
+.my_works__info p:hover {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+.free_time {
+  margin-bottom: 40px;
+}
