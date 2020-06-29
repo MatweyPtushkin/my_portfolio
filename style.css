@@ -771,10 +771,24 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  body {
+    overflow-x: visible;
+  }
+
+  .connect p {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 376px) {
   body {
     overflow-x: visible;
     font-size: auto;
+  }
+
+  .connect p {
+    font-size: 20px;
   }
 
   .connect__social__vk-img,
